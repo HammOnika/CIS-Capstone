@@ -45,7 +45,6 @@ public class Main extends Application {
 	Button takeLesson3= new Button("View Module");
 
 	//profile
-	private Button home = new Button("home");
 
 /* 
  	static GraphicsConfiguration gc;
@@ -68,6 +67,14 @@ public class Main extends Application {
 	
 	public void start(Stage primaryStage) {
 		try {
+			Button home1 = new Button("home");
+			Button home2 = new Button("home");
+			Button home3 = new Button("home");
+			
+			Button home4 = new Button("home");
+			Button home5 = new Button("home");
+			Button home6 = new Button("home");
+			
 			GridPane gridPane = new GridPane();
 			gridPane.setHgap(20);
 			gridPane.setVgap(10);
@@ -129,14 +136,16 @@ public class Main extends Application {
 			VBox userinformation = new VBox(20);
 			Label uname = new Label("Username:\t"+username);
 			Label email = new Label("Email:\tdummyEmail@gmail.com");
+			Label accountType = new Label("Account Type:\tStudent");
 			Label location = new Label("Location:\t City/State");
 			Label interests = new Label("Interests:\t Reversing, binary exploitation");
 			Label about = new Label("About\tsome words about the student written by the student");
-			userinformation.getChildren().addAll(uname, email, location, interests, about, home);
+			userinformation.getChildren().addAll(uname, email, accountType, location, interests, about, home1);
 			
 			
 			BorderPane profile = new BorderPane();
 			profile.setCenter(userinformation);
+			profile.setBottom(home6);
 			Scene profilescene = new Scene(profile, 900, 600);
 			//end profile scene
 			//--------------------------------------------------
@@ -151,7 +160,7 @@ public class Main extends Application {
 			VBox test3 = new VBox();
 			test3.getChildren().addAll(new Label("for example: reverse engineering\\nmodule 2, x86 basics part 2"), takeTest3);
 			
-			listTests.getChildren().addAll(test1, test2, test3, home);
+			listTests.getChildren().addAll(test1, test2, test3, home2);
 			
 			BorderPane testList = new BorderPane();
 			testList.setCenter(listTests);
@@ -170,7 +179,7 @@ public class Main extends Application {
 			VBox lesson3 = new VBox();
 			lesson3.getChildren().addAll(new Label("for example: reverse engineering\\nmodule 2, x86 basics part 2"), takeLesson3);
 			
-			listLessons.getChildren().addAll(lesson1, lesson2, lesson3, home);
+			listLessons.getChildren().addAll(lesson1, lesson2, lesson3, home3);
 			
 			BorderPane lessonList = new BorderPane();
 			lessonList.setCenter(listLessons);
@@ -219,7 +228,42 @@ public class Main extends Application {
 					System.err.println(e);
 				}
 			});
-			home.setOnAction(a -> {
+			home1.setOnAction(a -> {
+				try {
+					primaryStage.setScene(homescene);
+				} catch (Exception e) {
+					System.err.println(e);
+				}
+			});
+			home2.setOnAction(a -> {
+				try {
+					primaryStage.setScene(homescene);
+				} catch (Exception e) {
+					System.err.println(e);
+				}
+			});
+			home3.setOnAction(a -> {
+				try {
+					primaryStage.setScene(homescene);
+				} catch (Exception e) {
+					System.err.println(e);
+				}
+			});
+			home4.setOnAction(a -> {
+				try {
+					primaryStage.setScene(homescene);
+				} catch (Exception e) {
+					System.err.println(e);
+				}
+			});
+			home5.setOnAction(a -> {
+				try {
+					primaryStage.setScene(homescene);
+				} catch (Exception e) {
+					System.err.println(e);
+				}
+			});
+			home6.setOnAction(a -> {
 				try {
 					primaryStage.setScene(homescene);
 				} catch (Exception e) {
