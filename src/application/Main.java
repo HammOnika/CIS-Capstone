@@ -197,8 +197,16 @@ public class Main extends Application {
 			btlogin.setOnAction(a -> {
 				try {
 					//validate login
+					//tfUsername.getText().trim().isEmpty()
+					if(!(tfUsername.getText().trim().isEmpty()||tfPassword.getText().trim().isEmpty())) {
 					username = tfUsername.getText();
+					//System.out.println(username);
 					primaryStage.setScene(homescene);
+					}
+					else {
+						gridPane.add(new Label("Please enter username and password"), 1, 5);
+					
+					}
 				} catch (Exception e) {
 					System.err.println(e);
 				}
