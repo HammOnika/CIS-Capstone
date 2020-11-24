@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+      <HBox prefHeight="111.0" prefWidth="640.0">
+         <children>
+            <Button mnemonicParsing="false" text="Sign out" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Inbox" />
+            <Button layoutX="161.0" layoutY="10.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </HBox>
+      <HBox prefHeight="41.0" prefWidth="640.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="269.0" text="Name" />
+            <Label text="&lt;Name&gt;" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="121.0" prefHeight="41.0" prefWidth="640.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="269.0" text="Email" />
+            <Label text="&lt;Email&gt;" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="166.0" prefHeight="41.0" prefWidth="640.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="269.0" text="School" />
+            <Label text="&lt;School&gt;" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="211.0" prefHeight="41.0" prefWidth="640.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="269.0" text="Interest" />
+            <Label text="&lt;Interests&gt;" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="211.0" prefHeight="41.0" prefWidth="640.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="269.0" text="Bio" />
+            <Label text="&lt;Bio&gt;" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" text="Edit Info" />
+  </children>
+</VBox>

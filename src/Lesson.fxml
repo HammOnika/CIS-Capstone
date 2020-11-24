@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+	<HBox prefHeight="111.0" prefWidth="640.0">
+         <children>
+            <Button mnemonicParsing="false" text="Sign out" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Inbox" />
+            <Button layoutX="161.0" layoutY="10.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </HBox>
+      <Label prefHeight="45.0" prefWidth="562.0" text="Lesson 1 Introduction To Programming" />
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Unit 1">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Module 1" />
+                  <MenuItem mnemonicParsing="false" text="Module 2" />
+                  <MenuItem mnemonicParsing="false" text="Module 3" />
+                  <MenuItem mnemonicParsing="false" text="Module 4" />
+                  <MenuItem mnemonicParsing="false" text="Module 5" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Unit 2">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Module 1" />
+                  <MenuItem mnemonicParsing="false" text="Module 2" />
+                  <MenuItem mnemonicParsing="false" text="Module 3" />
+                  <MenuItem mnemonicParsing="false" text="Module 4" />
+                  <MenuItem mnemonicParsing="false" text="Module 5" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Unit 3">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Module 1" />
+                  <MenuItem mnemonicParsing="false" text="Module 2" />
+                  <MenuItem mnemonicParsing="false" text="Module 3" />
+                  <MenuItem mnemonicParsing="false" text="Module 4" />
+                  <MenuItem mnemonicParsing="false" text="Module 5" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="10.0" layoutY="121.0" prefHeight="45.0" prefWidth="562.0" text="Lesson 2 Introduction To CyberSec" />
+      <MenuBar layoutX="10.0" layoutY="166.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Unit 1">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Module 1" />
+                  <MenuItem mnemonicParsing="false" text="Module 2" />
+                  <MenuItem mnemonicParsing="false" text="Module 3" />
+                  <MenuItem mnemonicParsing="false" text="Module 4" />
+                  <MenuItem mnemonicParsing="false" text="Module 5" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Unit 2">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Module 1" />
+                  <MenuItem mnemonicParsing="false" text="Module 2" />
+                  <MenuItem mnemonicParsing="false" text="Module 3" />
+                  <MenuItem mnemonicParsing="false" text="Module 4" />
+                  <MenuItem mnemonicParsing="false" text="Module 5" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Unit 3">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Module 1" />
+                  <MenuItem mnemonicParsing="false" text="Module 2" />
+                  <MenuItem mnemonicParsing="false" text="Module 3" />
+                  <MenuItem mnemonicParsing="false" text="Module 4" />
+                  <MenuItem mnemonicParsing="false" text="Module 5" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+  </children>
+</VBox>
