@@ -28,8 +28,8 @@
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button fx:id="login" mnemonicParsing="false" onAction="#showStudentHome" text="Login" />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Register" />
+            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#showStudentHome" text="Login" />
+            <Button fx:id="showRegistration" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRegistration" text="Register" />
          </children>
       </HBox>
   </children>

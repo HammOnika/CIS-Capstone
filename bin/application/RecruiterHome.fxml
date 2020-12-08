@@ -7,12 +7,12 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
   <children>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" text="Sign Out" />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Inbox" />
+            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#showLogin" text="Sign Out" />
+            <Button fx:id="showMessaging" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showMessaging" text="Inbox" />
          </children>
       </HBox>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">

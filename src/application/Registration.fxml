@@ -7,7 +7,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
   <children>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
@@ -60,7 +60,7 @@
 	  
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" text="Register" />
+            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#showLogin" text="Register" />
          </children>
       </HBox>
   </children>

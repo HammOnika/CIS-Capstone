@@ -11,8 +11,8 @@
   <children>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" text="Sign Out" />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Inbox" />
+            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#showLogin" text="Sign Out" />
+            <Button fx:id="showMessaging" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showMessaging" text="Inbox" />
          </children>
       </HBox>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
@@ -21,12 +21,12 @@
                <children>
                   <VBox prefHeight="300.0" prefWidth="158.0">
                      <children>
-                        <Button mnemonicParsing="false" text="Profile">
+                        <Button fx:id="showProfile" mnemonicParsing="false" onAction="#showProfile" text="Profile">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Quizes">
+                        <Button fx:id="showTest" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showTest" text="Quizes">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -51,7 +51,7 @@
                   <VBox prefHeight="300.0" prefWidth="462.0">
                      <children>
                         <Label prefHeight="45.0" prefWidth="464.0" text="Next Available Module:" />
-                        <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="464.0" text="Open Module" />
+                        <Button fx:id="showLesson" mnemonicParsing="false" onAction="#showLesson" prefHeight="65.0" prefWidth="464.0" text="Open Module" />
                         <Label layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="464.0" text="Next Available Test:" />
                         <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="464.0" text="Take Test" />
                      </children>
