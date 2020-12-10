@@ -11,25 +11,31 @@
   <children>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label text="Login" />
+            <Label prefHeight="102.0" prefWidth="640.0" text="Create Job Listing" />
          </children>
       </HBox>
       <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label text="Username" />
-            <TextField fx:id="username" prefHeight="200.0" prefWidth="200.0" />
+            <Label text="Job Title" />
+            <TextField fx:id="username" prefHeight="65.0" prefWidth="506.0" />
          </children>
       </HBox>
       <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label text="Password" />
-            <TextField fx:id="password" prefHeight="200.0" prefWidth="200.0" />
+            <Label prefHeight="85.0" prefWidth="210.0" text="Job Description" />
+            <TextField fx:id="password" prefHeight="100.0" prefWidth="427.0" />
          </children>
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#login" text="Login" />
-            <Button fx:id="showRegistration" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRegistration" text="Register" />
+            <Label prefHeight="80.0" prefWidth="364.0" text="General Requirments" />
+            <TextField fx:id="password1" prefHeight="100.0" prefWidth="427.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#login" text="Post" />
+            <Button fx:id="showRecruiterHome" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRecruiterHome" text="Home" />
          </children>
       </HBox>
   </children>

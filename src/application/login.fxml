@@ -17,18 +17,18 @@
       <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label text="Username" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextField fx:id="username" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </HBox>
       <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label text="Password" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextField fx:id="password" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#showStudentHome" text="Login" />
+            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#login" text="Login" />
             <Button fx:id="showRegistration" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRegistration" text="Register" />
          </children>
       </HBox>

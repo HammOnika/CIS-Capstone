@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+  <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="102.0" prefWidth="640.0" text="Search For Job" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="304.0" text="Name" />
+            <TextField prefHeight="65.0" prefWidth="602.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="85.0" prefWidth="257.0" text="Company Name" />
+            <TextField prefHeight="65.0" prefWidth="417.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="85.0" prefWidth="257.0" text="Region/Town" />
+            <ComboBox prefHeight="65.0" prefWidth="388.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="170.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="85.0" prefWidth="257.0" text="Field of Work" />
+            <ComboBox prefHeight="65.0" prefWidth="388.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#login" text="Search" />
+            <Button fx:id="showRecruiterHome" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRecruiterHome" text="Home" />
+         </children>
+      </HBox>
+  </children>
+</VBox>

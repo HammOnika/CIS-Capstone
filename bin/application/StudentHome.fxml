@@ -36,12 +36,12 @@
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" text="Lessons">
+                        <Button fx:id="showLesson" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#showLesson" text="Lessons">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" text="Job Search">
+                        <Button fx:id="showSearchForJob" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#showSearchForJob" text="Job Search">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -51,7 +51,7 @@
                   <VBox prefHeight="300.0" prefWidth="462.0">
                      <children>
                         <Label prefHeight="45.0" prefWidth="464.0" text="Next Available Module:" />
-                        <Button fx:id="showLesson" mnemonicParsing="false" onAction="#showLesson" prefHeight="65.0" prefWidth="464.0" text="Open Module" />
+                        <Button mnemonicParsing="false" onAction="#showLesson" prefHeight="65.0" prefWidth="464.0" text="Open Module" />
                         <Label layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="464.0" text="Next Available Test:" />
                         <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="464.0" text="Take Test" />
                      </children>

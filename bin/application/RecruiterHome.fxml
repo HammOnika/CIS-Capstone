@@ -31,17 +31,17 @@
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Search For Candidates">
+                        <Button fx:id="showSearchForStudent" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showSearchForStudent" text="Search For Candidates">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" text="Assign Test">
+                        <Button fx:id="showAssignTest" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#showAssignTest" text="Assign Test">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" text="Job Search">
+                        <Button fx:id="showPostJob" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#showPostJob" text="Post Job">
                            <font>
                               <Font size="24.0" />
                            </font>
