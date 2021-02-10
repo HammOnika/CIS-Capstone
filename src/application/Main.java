@@ -67,10 +67,10 @@ public class Main extends Application {
 	@FXML
 	public boolean login() throws Exception{
 		if(username.getText().equals("student")) {
-			if(username.getText().equals(password.getText())) {
+			
 				showStudentHome();
 				return true;
-			}
+			
 		}
 		else if(username.getText().equals("teacher")) {
 			if(username.getText().equals(password.getText())) {
