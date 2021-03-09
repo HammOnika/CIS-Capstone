@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.control.*?>
@@ -9,6 +10,28 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
   <children>
+      <HBox fillHeight="false" prefHeight="111.0" prefWidth="640.0">
+         <children>
+            <Button fx:id="showLogin1" mnemonicParsing="false" onAction="#showLogin" text="Sign out">
+               <HBox.margin>
+                  <Insets left="25.0" right="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="showMessaging" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showMessaging" text="Inbox">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="showStudentHome" layoutX="161.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRecruiterHome" text="Home">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="25.0" />
+         </padding>
+      </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label prefHeight="102.0" prefWidth="640.0" text="Create Job Listing" />
@@ -35,7 +58,6 @@
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
             <Button fx:id="showLogin" mnemonicParsing="false" onAction="#login" text="Post" />
-            <Button fx:id="showRecruiterHome" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRecruiterHome" text="Home" />
          </children>
       </HBox>
   </children>

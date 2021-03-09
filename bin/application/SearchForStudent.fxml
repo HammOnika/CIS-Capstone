@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.control.*?>
@@ -9,33 +10,63 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
   <children>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <Label prefHeight="102.0" prefWidth="640.0" text="Search For Student" />
+      <HBox fillHeight="false" prefHeight="111.0" prefWidth="640.0">
          <children>
-            <Label prefHeight="102.0" prefWidth="640.0" text="Search For Student" />
+            <Button fx:id="showLogin1" mnemonicParsing="false" onAction="#showLogin" text="Sign out">
+               <HBox.margin>
+                  <Insets left="25.0" right="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="showMessaging1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showMessaging" text="Inbox">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="showStudentHome1" layoutX="161.0" layoutY="10.0" mnemonicParsing="false" onAction="#showStudentHome" text="Home">
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Button>
          </children>
+         <padding>
+            <Insets right="25.0" />
+         </padding>
       </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
       <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label prefHeight="45.0" prefWidth="304.0" text="Name" />
-            <TextField prefHeight="65.0" prefWidth="602.0" />
+            <TextField prefHeight="29.0" prefWidth="469.0" />
          </children>
+         <VBox.margin>
+            <Insets bottom="20.0" top="25.0" />
+         </VBox.margin>
       </HBox>
       <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label prefHeight="85.0" prefWidth="257.0" text="Completed Tests" />
+            <Label prefHeight="85.0" prefWidth="257.0" text="Completed Tests">
+               <HBox.margin>
+                  <Insets bottom="25.0" />
+               </HBox.margin></Label>
             <ComboBox prefHeight="65.0" prefWidth="388.0" />
          </children>
+         <VBox.margin>
+            <Insets bottom="25.0" />
+         </VBox.margin>
       </HBox>
       <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label prefHeight="85.0" prefWidth="257.0" text="Region/Town" />
+            <Label prefHeight="85.0" prefWidth="257.0" text="Region/Town">
+               <HBox.margin>
+                  <Insets bottom="25.0" />
+               </HBox.margin></Label>
             <ComboBox prefHeight="65.0" prefWidth="388.0" />
          </children>
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
             <Button fx:id="showLogin" mnemonicParsing="false" onAction="#login" text="Search" />
-            <Button fx:id="showRecruiterHome" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRecruiterHome" text="Home" />
          </children>
       </HBox>
   </children>

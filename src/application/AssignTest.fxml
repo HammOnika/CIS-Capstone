@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.control.*?>
@@ -11,26 +12,32 @@
   <children>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
+            <Button fx:id="showRecruiterHome" mnemonicParsing="false" onAction="#showRecruiterHome" prefHeight="65.0" prefWidth="312.0" text="Home">
+               <HBox.margin>
+                  <Insets left="25.0" right="25.0" top="15.0" />
+               </HBox.margin></Button>
             <Label prefHeight="102.0" prefWidth="640.0" text="Assign Quiz" />
          </children>
       </HBox>
-      <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
          <children>
             <Label prefHeight="45.0" prefWidth="304.0" text="Select Student" />
             <ChoiceBox prefHeight="65.0" prefWidth="529.0" />
          </children>
       </HBox>
-      <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+      <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
          <children>
             <Label prefHeight="85.0" prefWidth="210.0" text="Select Quiz" />
             <ChoiceBox prefHeight="65.0" prefWidth="431.0" />
          </children>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="25.0">
          <children>
             <Button fx:id="showLogin" mnemonicParsing="false" onAction="#login" text="Assign" />
-            <Button fx:id="showRecruiterHome" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showRecruiterHome" text="Home" />
          </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
       </HBox>
   </children>
 </VBox>

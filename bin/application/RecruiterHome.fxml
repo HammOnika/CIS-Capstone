@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.control.*?>
@@ -9,43 +10,73 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
   <children>
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Button fx:id="showLogin" mnemonicParsing="false" onAction="#showLogin" text="Sign Out" />
-            <Button fx:id="showMessaging" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showMessaging" text="Inbox" />
-         </children>
-      </HBox>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <HBox prefHeight="300.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="300.0" prefWidth="640.0">
                      <children>
-                        <Button mnemonicParsing="false" text="Profile">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Button>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="List Jobs">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="showSearchForStudent" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showSearchForStudent" text="Search For Candidates">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="showAssignTest" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#showAssignTest" text="Assign Test">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="showPostJob" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#showPostJob" text="Post Job">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Button>
+                        <HBox fillHeight="false" prefHeight="111.0" prefWidth="640.0">
+                           <children>
+                              <Button fx:id="showLogin1" mnemonicParsing="false" onAction="#showLogin" text="Sign out">
+                                 <HBox.margin>
+                                    <Insets left="25.0" right="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="showMessaging1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showMessaging" text="Inbox">
+                                 <HBox.margin>
+                                    <Insets right="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets right="25.0" />
+                           </padding>
+                        </HBox>
+                        <VBox prefHeight="300.0" prefWidth="158.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="Profile">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="List Jobs">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="showSearchForStudent" mnemonicParsing="false" onAction="#showSearchForStudent" text="Search For Candidates">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="showAssignTest" mnemonicParsing="false" onAction="#showAssignTest" text="Assign Test">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="showPostJob" mnemonicParsing="false" onAction="#showPostJob" text="Post Job">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
                      </children>
                   </VBox>
                </children>

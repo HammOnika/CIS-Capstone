@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.control.*?>
@@ -18,50 +19,100 @@
       <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label text="Firstname" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextArea prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="105.0" />
+               </HBox.margin></TextArea>
          </children>
+         <VBox.margin>
+            <Insets right="25.0" />
+         </VBox.margin>
       </HBox>
       <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label text="Lastname" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextArea prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="110.0" />
+               </HBox.margin></TextArea>
          </children>
+         <VBox.margin>
+            <Insets right="25.0" />
+         </VBox.margin>
       </HBox>
 	  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label text="Name of School" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextArea prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin></TextArea>
          </children>
+         <VBox.margin>
+            <Insets right="25.0" />
+         </VBox.margin>
       </HBox>
 	  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label text="Email" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextArea prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="165.0" />
+               </HBox.margin></TextArea>
          </children>
+         <VBox.margin>
+            <Insets right="25.0" />
+         </VBox.margin>
       </HBox>
 	  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label text="Username" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextArea prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin></TextArea>
          </children>
+         <VBox.margin>
+            <Insets right="25.0" />
+         </VBox.margin>
       </HBox>
 	  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Label text="Password" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextArea prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="110.0" />
+               </HBox.margin></TextArea>
          </children>
       </HBox>
 	  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label text="Confirm Password" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <Label text="Confirm Pass" />
+            <TextArea prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="65.0" />
+               </HBox.margin></TextArea>
          </children>
+         <VBox.margin>
+            <Insets right="25.0" />
+         </VBox.margin>
       </HBox>
 	  
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
             <Button fx:id="showLogin" mnemonicParsing="false" onAction="#showLogin" text="Register" />
+            <Button fx:id="showLogin1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showLogin" prefHeight="65.0" prefWidth="139.0" text="Back">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
          </children>
+         <padding>
+            <Insets right="25.0" />
+         </padding>
+         <VBox.margin>
+            <Insets left="25.0" right="25.0" />
+         </VBox.margin>
       </HBox>
   </children>
 </VBox>

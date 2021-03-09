@@ -19,29 +19,29 @@
       <children>
             <HBox prefHeight="300.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="638.0">
+                  <VBox prefHeight="300.0" prefWidth="158.0">
                      <children>
-                        <Button fx:id="showProfile" mnemonicParsing="false" onAction="#showProfile" text="Profile">
+                        <Button fx:id="showProfile1" mnemonicParsing="false" onAction="#showProfile" text="Profile">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Students">
+                        <Button mnemonicParsing="false" text="Students">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button fx:id="showLesson" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#showLesson" text="List Lessons">
+                        <Button fx:id="showLesson" mnemonicParsing="false" onAction="#showLesson" text="List Lessons">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button fx:id="showTest" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#showTest" text="List Quizes">
+                        <Button fx:id="showTest" mnemonicParsing="false" onAction="#showTest" text="List Quizes">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Button>
-                        <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" text="Job Search">
+                        <Button mnemonicParsing="false" text="Job Search">
                            <font>
                               <Font size="24.0" />
                            </font>
